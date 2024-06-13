@@ -26,5 +26,5 @@ jobs:
     - name: create release and upload assets
       uses: softprops/action-gh-release@v2
       with:
-        files: release.7z
+        files: build.7z
         tag_name: ${{ github.event.inputs.tags }}
