@@ -23,6 +23,7 @@ jobs:
       with:
         type: '7z'
         filename: 'build.7z'
+        exclusions: '*.git* .editorconfig **/pages/careers/* **/pages/showcase/* **/videos/*'
     - name: create release and upload assets
       uses: softprops/action-gh-release@v2
       with:
